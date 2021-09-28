@@ -27,11 +27,11 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**താഴെ കാണുന്ന ചാനലിൽ join ചെയ്താലേ movie kittum Join Update Channel ❗ || And Join In That Channel...Then Click On || 😊  Try Again || For your Movie Files !!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("🤖 Join Updates Channel", url=https://t.me/joinchat/8xM8OISI9HwzMzE1)
                             ],
                             [
                                 InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
@@ -66,10 +66,7 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Bots', url='https://t.me/ErrorXbotz')
-                    ]
-                    ]
+                        InlineKeyboardButton('Search again',
                 await bot.send_cached_media(
                     chat_id=cmd.from_user.id,
                     file_id=file_id,
@@ -86,7 +83,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton("🤖 Join Updates Channel", url=https://t.me/joinchat/8xM8OISI9HwzMzE1)
                     ]
                 ]
             )
@@ -103,8 +100,8 @@ async def start(bot, cmd):
                         InlineKeyboardButton("Source Code", url='https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2'),
                     ],
                    [
-                       InlineKeyboardButton("Update Channel", url='https://t.me/ErrorXbotz'),
-                       InlineKeyboardButton("Support Group", url='https://t.me/ErrorXsupport'),
+                       InlineKeyboardButton("Update Channel", url='https://t.me/minnaltv'),
+                       InlineKeyboardButton("Support Group", url='https://t.me/Mallusbotsupport'),
                     ],
                      [
                         InlineKeyboardButton("About", callback_data="about")
@@ -196,11 +193,11 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/ErrorXbotz'),
+            InlineKeyboardButton('Update Channel', url='https://t.me/minnaltv'),
             InlineKeyboardButton('Source Code', url='https://github.com/Jinn-Of-Telegram/Media-Search-bot-v2')
         ]
         ]
-    await message.reply(text="<b>Developer : <a href='https://t.me/Jinn_007'>꧁Ⓜⓤⓣⓗⓐⓛⓘⓑ_★࿐</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/Jinn-Of-Telegram/Media-Search-bot-V2'>Click here</a>\nUpdate Channel : <a href='https://t.me/ErrorXBotz'>ErrorXBotz</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await message.reply(text="<b>Developer : <a href='https://t.me/Botsvillage'>MW HD</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='https://github.com/Jinn-Of-Telegram/Media-Search-bot-V2'>Click here</a>\nUpdate Channel : <a href='https://t.me/ErrorXBotz'>ErrorXBotz</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 @Client.on_message(filters.command('help'))
 async def bot_info(bot, message):
